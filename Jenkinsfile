@@ -9,13 +9,13 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building or Resolve Dependencies!'
-                sh 'bundler install'
+                sh 'bundle install'
             }
         }
         stage('Test') {
             steps {
                 echo 'Running regression tests'
-                sh 'bundler exec cucumber -p ci'
+                sh 'bundle exec cucumber -p ci'
             }
         }
         stage('UAT') {
