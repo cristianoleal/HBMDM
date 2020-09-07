@@ -6,7 +6,7 @@ Funcionalidade: Tela de Relatorio
     Posso acessar e fazer donwload dos relatorios desejados
 
     @tela_relatorio
-    Cenario: Acessar tela relatorios
+    Esquema do Cenario: Acessar tela relatorios
         Quando eu acesso a tela de relatorios
         E realizo o filtro por <filtro>
         Então devo ver o relatorio <relatorio>
@@ -17,7 +17,7 @@ Funcionalidade: Tela de Relatorio
             |"novo"             |"Detalhes da Rota (novo)"|
 
     @relatorio_padrao
-    Cenario: Acessar relatorios
+    Esquema do Cenario: Acessar relatorios
         Quando acesso o relatorio <linkRelatorio>
         E realizo o filtro desejados
         Então devo fazer download e verificar o nome do relatorio <nomeRelatorio>
