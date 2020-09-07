@@ -10,6 +10,7 @@ pipeline {
             steps {
                 echo 'Instalando as dependencias do projeto'
                 sh 'bundle install'
+                cucumber failedFeaturesNumber: -1, failedScenariosNumber: -1, failedStepsNumber: -1, fileIncludePattern: '**/*.json', jsonReportDirectory: 'log', pendingStepsNumber: -1, skippedStepsNumber: -1, sortingMethod: 'ALPHABETICAL', undefinedStepsNumber: -1
             }
         }
         stage('Test') {

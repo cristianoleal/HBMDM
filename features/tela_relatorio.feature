@@ -5,6 +5,12 @@ Funcionalidade: Tela de Relatorio
     Sendo um analista de rota
     Posso acessar e fazer donwload dos relatorios desejados
 
+    @equipe_entrega
+    Cenario: Acessar relatorio Eficiência Equipe de Entrega
+        Quando acesso o relatorio Eficiência Equipe de Entrega
+        E realizo os filtros especificos do relatorio Eficiência Equipe de Entrega
+        Então devo exibir o relatorio na tela do MDM
+
     @tela_relatorio
     Esquema do Cenario: Acessar tela relatorios
         Quando eu acesso a tela de relatorios
@@ -36,10 +42,3 @@ Funcionalidade: Tela de Relatorio
             |"MauUsoFoxtrot"          |"Relatório de mau uso Foxtrot"               |
             |"LogEventosMobile"       |"Logs de Eventos Mobile"                     |
             |"VelocidadeExcedida"     |"Velocidade Excedida"                        |
-
-    
-    @equipe_entrega
-    Cenario: Acessar relatorio Eficiência Equipe de Entrega
-        Quando acesso o relatorio Eficiência Equipe de Entrega
-        E realizo os filtros especificos do relatorio Eficiência Equipe de Entrega
-        Então devo exibir o relatorio na tela do MDM
