@@ -1,0 +1,11 @@
+source "http://rubygems.org"
+
+gem "capybara",  "3.18.0"
+gem "cucumber", "3.1.2"
+gem "os", "1.0.1"
+gem "rspec", "3.8.0"
+gem "ffi"
+gem "report_builder"
+gem "selenium-webdriver", "3.142.0"
+gem "httparty", "0.18.0"
+gem "capybara-chrome_response_headers", "0.2.0"

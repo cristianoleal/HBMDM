@@ -1,0 +1,3 @@
+---
+  default: -p chrome -p json -p pretty
+  json: --format json --out=log/report.json
