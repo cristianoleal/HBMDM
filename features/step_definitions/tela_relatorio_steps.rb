@@ -49,6 +49,6 @@ Então('devo exibir o relatorio na tela do MDM') do
     expect(qtdLinhas > 1).to be true
   else
     expect(page).to have_content @tela_relatorio_page.relatorioVazio
-    log(@tela_relatorio_page.relatorioVazio)
+    puts(@tela_relatorio_page.relatorioVazio)
   end
 end
