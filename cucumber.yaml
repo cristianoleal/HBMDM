@@ -1,9 +1,11 @@
 ---
-  default: -p chrome -p json -p pretty
-  ci: -p headless -p json -p pretty
+  default: -p prod -p chrome
+  prod: ENV_TYPE=prod
+  hml: ENV_TYPE=hml
+  #ci: -p headless -p json -p pretty
   firefox: BROWSER=firefox
   chrome: BROWSER=chrome
   headless: BROWSER=headless
-  json: --format json --out=log/report.json
-  pretty: --format pretty
-  progress: --format progress
+  #json: --format json --out=log/report.json
+  #pretty: --format pretty
+  #progress: --format progress
