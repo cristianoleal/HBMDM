@@ -15,7 +15,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Running regression tests'
-                sh 'blundle exec cucumber -p ci'
+                sh 'bundler exec cucumber -p ci'
             }
         }
         stage('UAT') {
