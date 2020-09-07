@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'ruby'
+            image 'crisaolea/rubywd'
         }
     }
 
@@ -15,6 +15,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Running regression tests'
+                sh 'blundler exec cucumber -p ci'
             }
         }
         stage('UAT') {
