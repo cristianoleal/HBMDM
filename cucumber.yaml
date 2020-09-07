@@ -1,6 +1,6 @@
 ---
   default: -p prod -p chrome -p json
-  ci: -p headless -p json -p pretty
+  ci: -p prod -p headless -p json
   prod: ENV_TYPE=prod
   hml: ENV_TYPE=hml
   firefox: BROWSER=firefox
