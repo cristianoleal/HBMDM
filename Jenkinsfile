@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'crisaolea/rubywd'
+            image 'crisaoleal/rubywd'
         }
     }
 
