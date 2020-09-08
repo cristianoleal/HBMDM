@@ -27,7 +27,7 @@ class TelaRelatorioPage
 
     def rangeData
         find("#DataInicial").set '01082020'
-        find("#DataFinal").set '20082020'
+        find("#DataFinal").set '06092020'
     end
 
     def downloadRelatorio

@@ -5,14 +5,14 @@ Repositório projeto HBMDM
 
 * Ter o Ruby instalado (versão 2.5 ou superior)
 
-## Instalar o Bundler
+## Instalar o Bundle
 `
-gem install bundler
+gem install bundle
 `
 
 ### Instalar as dependencias do Ruby (projeto)
 `
-blundler install
+blundle install
 `
 
 ### Executar localmente

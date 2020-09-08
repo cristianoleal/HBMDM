@@ -12,7 +12,7 @@ Funcionalidade: Tela de Relatorio
         Então devo exibir o relatorio na tela do MDM
 
     @tela_relatorio
-    Esquema do Cenario: Acessar tela relatorios
+    Esquema do Cenario: Filtrar relatorios
         Quando eu acesso a tela de relatorios
         E realizo o filtro por <filtro>
         Então devo ver o relatorio <relatorio>

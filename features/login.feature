@@ -7,7 +7,7 @@ Funcionalidade: Login
     
     @login_feliz
     Cenario: Acesso
-        Quando eu faço login com "cristiano" e "Crist123$"
+        Quando eu faço login com "cristiano" e "123"
         Então devo ser autenticado
     
     @login_infeliz
