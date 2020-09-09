@@ -1,3 +1,25 @@
+Quando('realizo os filtros especificos do relatorio Eficiência Equipe de Entrega') do
+  #Verificar filtros
+  @tela_relatorio_page.selecionarTodosCampos
+  @tela_relatorio_page.rangeData
+  @tela_relatorio_page.campoVazio
+  @tela_relatorio_page.checkCampo
+  @tela_relatorio_page.downloadRelatorio
+end
+
+Então('devo exibir o relatorio na tela do MDM') do
+  sleep 10
+  #Quantidades de linhas na tabela maior que 0?
+  qtdLinhas = @tela_relatorio_page.qtdLinhasTabela
+  
+  if(qtdLinhas > 1)
+    expect(qtdLinhas > 1).to be true
+  else
+    expect(page).to have_content @tela_relatorio_page.relatorioVazio
+    puts(@tela_relatorio_page.relatorioVazio)
+  end
+end
+
 Quando('eu acesso a tela de relatorios') do
   @tela_relatorio_page.telaRelatorio
   expect(@tela_relatorio_page.campoPesquisa).to be true
@@ -29,26 +51,4 @@ end
 Quando('acesso o relatorio Eficiência Equipe de Entrega') do
   @tela_relatorio_page.telaRelatorio
   @tela_relatorio_page.relatorioEficienciaEquipeEntrega
-end
-
-Quando('realizo os filtros especificos do relatorio Eficiência Equipe de Entrega') do
-  #Verificar filtros
-  @tela_relatorio_page.selecionarTodosCampos
-  @tela_relatorio_page.rangeData
-  @tela_relatorio_page.campoVazio
-  @tela_relatorio_page.checkCampo
-  @tela_relatorio_page.downloadRelatorio
-end
-
-Então('devo exibir o relatorio na tela do MDM') do
-  sleep 10
-  #Quantidades de linhas na tabela maior que 0?
-  qtdLinhas = @tela_relatorio_page.qtdLinhasTabela
-  
-  if(qtdLinhas > 1)
-    expect(qtdLinhas > 1).to be true
-  else
-    expect(page).to have_content @tela_relatorio_page.relatorioVazio
-    puts(@tela_relatorio_page.relatorioVazio)
-  end
 end
