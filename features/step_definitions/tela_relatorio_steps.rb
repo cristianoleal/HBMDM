@@ -8,10 +8,14 @@ Quando('realizo os filtros especificos do relatorio Eficiência Equipe de Entreg
 end
 
 Então('devo exibir o relatorio na tela do MDM') do
-  sleep 10
+  existe = find('#loading')
+  while(existe.visible?)
+    sleep 5
+  end 
+
   #Quantidades de linhas na tabela maior que 0?
   qtdLinhas = @tela_relatorio_page.qtdLinhasTabela
-  
+
   if(qtdLinhas > 1)
     expect(qtdLinhas > 1).to be true
   else

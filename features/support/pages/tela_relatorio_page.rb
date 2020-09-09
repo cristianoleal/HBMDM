@@ -27,7 +27,7 @@ class TelaRelatorioPage
 
     def rangeData
         find("#DataInicial").set '01082020'
-        find("#DataFinal").set '06092020'
+        find("#DataFinal").set '08082020'
     end
 
     def downloadRelatorio
@@ -58,7 +58,7 @@ class TelaRelatorioPage
     end
 
     def checkCampo
-        check('NoHorario')
+        uncheck('NoHorario')
         check('Antecipadas')
         check('Atrasadas')
     end
