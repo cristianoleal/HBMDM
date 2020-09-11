@@ -8,10 +8,7 @@ Quando('realizo os filtros especificos do relatorio Eficiência Equipe de Entreg
 end
 
 Então('devo exibir o relatorio na tela do MDM') do
-  existe = find('#loading')
-  while(existe.visible?)
-    sleep 5
-  end 
+  @tela_relatorio_page.telaLoading
 
   #Quantidades de linhas na tabela maior que 0?
   qtdLinhas = @tela_relatorio_page.qtdLinhasTabela
@@ -49,6 +46,8 @@ end
 
 Então('devo fazer download e verificar o nome do relatorio {string}') do |nomeRelatorio|
   @tela_relatorio_page.downloadRelatorio
+  #page.driver.browser.navigate.to("chrome://downloads/")
+  #expect(page).to have_content nomeRelatorio
   expect(page).to have_content nomeRelatorio
 end
 

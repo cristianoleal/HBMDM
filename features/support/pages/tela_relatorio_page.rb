@@ -27,7 +27,7 @@ class TelaRelatorioPage
 
     def rangeData
         find("#DataInicial").set '01082020'
-        find("#DataFinal").set '08082020'
+        find("#DataFinal").set '01092020'
     end
 
     def downloadRelatorio
@@ -58,7 +58,7 @@ class TelaRelatorioPage
     end
 
     def checkCampo
-        uncheck('NoHorario')
+        check('NoHorario')
         check('Antecipadas')
         check('Atrasadas')
     end
@@ -69,6 +69,14 @@ class TelaRelatorioPage
 
     def relatorioVazio
         'Nenhum registro encontrado.'
+    end
+
+    def telaLoading
+        existe = find('#loading')
+  
+        while(existe.visible?)
+          sleep 5
+        end 
     end
 
 end
