@@ -4,7 +4,7 @@ Quando('eu faço login com {string} e {string}') do |usuario, senha|
   end
   
   Então('devo ser autenticado') do
-    expect(@tela_login.botao_sair).to be true
+    expect(@tela_login.botao_bemvindo).to be true
   end
 
   Então('devo ver a mensagem {string}') do |texto|

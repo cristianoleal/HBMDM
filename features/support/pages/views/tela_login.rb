@@ -1,7 +1,7 @@
 class TelaLoginView
     include Capybara::DSL
 
-    def botao_sair
+    def botao_bemvindo
         find("#spnTop").visible?
     end
     
