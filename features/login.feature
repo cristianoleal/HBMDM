@@ -17,6 +17,6 @@ Funcionalidade: Login
 
         Exemplos:
             |usuario            |senha           | texto                                |
-            |"cristiano"        |"senhaTeste"    | "Usuário ou senha nválidos."         |
+            |"cristiano"        |"senhaTeste"    | "Usuário ou senha inválidos."         |
             |""                 |"senhaTeste"    | "Usuário é um campo obrigatório."    |
             |"cristiano"        |""              | "Senha é um campo obrigatório."      |
