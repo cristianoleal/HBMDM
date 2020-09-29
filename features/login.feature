@@ -7,7 +7,7 @@ Funcionalidade: Login
     
     @login_feliz
     Cenario: Acesso
-        Quando eu faço login com "Daiane" e "Manuela@21"
+        Quando eu faço login com "Daiane" e ""
         Então devo ser autenticado
     
     @login_infeliz
