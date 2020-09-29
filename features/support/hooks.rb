@@ -11,7 +11,7 @@ Before("@login") do
     user = CONFIG["users"]["user_admin"]
     @login_page.visitLogin
     @login_page.with(user["usuario"], user["senha"])
-    @tela_login.botao_sair
+    @tela_login.botao_bemvindo
 end
 
 After do |scenario|

@@ -7,7 +7,7 @@ Funcionalidade: Login
     
     @login_feliz
     Cenario: Acesso
-        Quando eu faço login com "cristiano" e "123"
+        Quando eu faço login com "Daiane" e "Manuela@21"
         Então devo ser autenticado
     
     @login_infeliz
@@ -17,6 +17,6 @@ Funcionalidade: Login
 
         Exemplos:
             |usuario            |senha           | texto                                |
-            |"cristiano"        |"senhaTeste"    | "Usuário ou senha inválidos."         |
+            |"cristiano"        |"senhaTeste"    | "Usuário ou senha inválidos."        |
             |""                 |"senhaTeste"    | "Usuário é um campo obrigatório."    |
             |"cristiano"        |""              | "Senha é um campo obrigatório."      |

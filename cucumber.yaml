@@ -1,5 +1,5 @@
 ---
-  default: -p prod -p chrome -p json -p progress
+  default: -p prod -p chrome -p json
   ci: -p prod -p headless -p json -p progress
   prod: ENV_TYPE=prod
   hml: ENV_TYPE=hml

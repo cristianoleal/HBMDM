@@ -1,6 +1,6 @@
 ---
-url: "http://ambev.tracking2nd.com.br"
+url: "http://tracking2nd-dev.ambevdevs.com.br/Lince.Web"
 users:
   user_admin:
-    usuario: "Daiane"
+    usuario: "daiane"
     senha: "Manuela@21"
